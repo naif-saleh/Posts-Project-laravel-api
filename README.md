@@ -30,6 +30,12 @@ Create and configure .env:
 cp .env.example .env
 php artisan key:generate
 ```
+
+Install Sanctum api
+
+```
+php artisan install
+```
 Run migrations:
 
 ```
