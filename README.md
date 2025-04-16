@@ -15,16 +15,15 @@ A RESTful API built with Laravel that allows users to register, authenticate, an
 ## 🚀 Getting Started
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/post-api.git
+```bash
+    https://github.com/naif-saleh/Posts-Project-laravel-api.git
    cd post-api
 Install dependencies:
-
 ```
 composer install
 ```
 Create and configure .env:
-
+```
 
 ```bash
 cp .env.example .env
