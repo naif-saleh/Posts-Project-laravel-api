@@ -20,44 +20,32 @@ A RESTful API built with Laravel that allows users to register, authenticate, an
    cd post-api
 Install dependencies:
 
-bash
-Copy
-Edit
 ```
 composer install
 ```
 Create and configure .env:
 
-bash
-Copy
-Edit
+
 ```bash
 cp .env.example .env
 php artisan key:generate
-Run migrations:
 ```
-bash
-Copy
-Edit
+Run migrations:
+
 ```
 php artisan migrate
 ```
 Start the development server:
 
-bash
-Copy
-Edit
 ```
 php artisan serve
 ```
 🔐 Authentication
 Register
+
 ```
 POST /api/register
 
-json
-Copy
-Edit
 {
   "name": "John Doe",
   "email": "john@example.com",
@@ -69,9 +57,6 @@ Login
 ```
 POST /api/login
 
-json
-Copy
-Edit
 {
   "email": "john@example.com",
   "password": "password"
@@ -79,12 +64,9 @@ Edit
 ```
 Returns a token you must use in the Authorization header:
 
-css
-Copy
-Edit
+Logout
 ```
 Authorization: Bearer {token}
-Logout
 POST /api/logout
 ```
 📁 Endpoints
@@ -133,9 +115,7 @@ POST	/api/posts/dislike	Dislike a post
 POST	/api/posts/undislike	Remove dislike
 ```
 📂 Example Headers for Authenticated Requests
-http
-Copy
-Edit
+
 ```
 Authorization: Bearer {your_token}
 Accept: application/json
